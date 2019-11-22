@@ -17,6 +17,6 @@ public class RedisTest {
         redisTemplate.opsForValue().set("key1", "value1");
         redisTemplate.opsForHash().put("hash", "h1", "hValue");
         System.out.println("key1 :" + redisTemplate.opsForValue().get("key1"));
-        System.out.println("key1 :" + redisTemplate.opsForHash().get("hash","h1"));
+        System.out.println("h1 :" + redisTemplate.opsForHash().get("hash","h1"));
     }
 }
